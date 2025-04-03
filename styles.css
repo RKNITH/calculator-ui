@@ -1,0 +1,208 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+    margin: 0;
+}
+
+.calculator {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+}
+
+h1 {
+    color: #333;
+}
+
+#display {
+    width: 90%;
+    padding: 15px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: none;
+    background: #f3f3f3;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Different colors for each button */
+button {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:nth-child(1) {
+    background: #ff4d4d;
+}
+
+/* C */
+button:nth-child(2) {
+    background: #ffaf40;
+}
+
+/* % */
+button:nth-child(3) {
+    background: #ff5f5f;
+}
+
+/* xⁿ */
+button:nth-child(4) {
+    background: #ff80ff;
+}
+
+/* ⌫ */
+
+button:nth-child(5) {
+    background: #5c85ff;
+}
+
+/* 7 */
+button:nth-child(6) {
+    background: #60d394;
+}
+
+/* 8 */
+button:nth-child(7) {
+    background: #ffcc00;
+}
+
+/* 9 */
+button:nth-child(8) {
+    background: #ff6b6b;
+}
+
+/* ÷ */
+
+button:nth-child(9) {
+    background: #ffcc99;
+}
+
+/* 4 */
+button:nth-child(10) {
+    background: #66b3ff;
+}
+
+/* 5 */
+button:nth-child(11) {
+    background: #ffa07a;
+}
+
+/* 6 */
+button:nth-child(12) {
+    background: #ff6666;
+}
+
+/* × */
+
+button:nth-child(13) {
+    background: #99cc00;
+}
+
+/* 1 */
+button:nth-child(14) {
+    background: #ff9966;
+}
+
+/* 2 */
+button:nth-child(15) {
+    background: #ff6347;
+}
+
+/* 3 */
+button:nth-child(16) {
+    background: #ff4500;
+}
+
+/* − */
+
+button:nth-child(17) {
+    background: #6699ff;
+}
+
+/* 0 */
+button:nth-child(18) {
+    background: #c71585;
+}
+
+/* . */
+button:nth-child(19) {
+    background: #00cc66;
+}
+
+/* = */
+button:nth-child(20) {
+    background: #cc0000;
+}
+
+/* + */
+
+button:nth-child(21) {
+    background: #339999;
+}
+
+/* √ */
+button:nth-child(22) {
+    background: #cc99ff;
+}
+
+/* ∛ */
+button:nth-child(23) {
+    background: #ff9933;
+}
+
+/* x^(1/n) */
+
+/* Unique hover effect */
+button:hover {
+    background: gray !important;
+    color: black;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transform: scale(1.1);
+}
+
+/* Blinking effect for the equal (=) button */
+button:nth-child(19) {
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    50% {
+        opacity: 0.5;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .calculator {
+        width: 100%;
+    }
+
+    #display {
+        font-size: 1.2rem;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
